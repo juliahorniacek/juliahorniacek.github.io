@@ -1,0 +1,69 @@
+<html>
+<head>
+    <title>(life) Styled by Julia</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            userId: 364076528,
+            accessToken: '364076528.467ede5.2e0a2caef68b49b88f27de5ed091c9a6',
+            limit: 4,
+            resolution: 'low_resolution'
+        });
+        userFeed.run();
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <h1>(life) Styled by Julia</h1>
+            <hr />
+            <div id="menu">
+                <ul>
+                    <li style="color: black;">Home</li>
+                    <li style="color: #8C001A;">Fashion</li>
+                    <li style="color: #8C001A;">Beauty</li>
+                    <li style="color: black;">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div id="wrapper">
+                <div class="rightSide">
+                    <div id="rightSideContent">
+                        <img src="img/juliablog.png" id="imgJuliaRightSide" />
+                        <h2>Julia</h2>
+                        <h3>Small town girl living big city dreams</h3>
+                        <br />
+                        <input type="button" value="Follow" class="burgundyButton" />
+                        <br /><br /><br />
+                        <div id="socialSection">
+                            <img id="imgTwitter" src="img/twitter.png" style="width: 60px; height: auto; cursor: pointer;" />
+                            <span class="linkSeparator">|</span>
+                            <img id="imgBloglovin" src="img/bloglovin.png" style="width: 60px; height; auto; margin-left: 26px; padding-bottom: 5px; cursor: pointer;" />
+                            <span class="linkSeparator">|</span>
+                            <img id="imgInstagram" src="img/instagram.png" style="width: 74px; height: auto; margin-left: 20px; cursor: pointer;" />
+                        </div>
+                        <br />
+                        <input type="button" value="Twitter" class="burgundyButton" />
+                        <br /><br />
+                        <a class="twitter-timeline" href="https://twitter.com/JuliaHorniacek" data-widget-id="658818252412473344">Tweets by @JuliaHorniacek</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                    </div>
+                </div>
+                <div class="leftSide">
+
+                </div>
+
+            </div>
+        </div>
+        <div id="instagram">
+            <h1>Instagram</h1>
+            <br />
+            <div id="instafeed"></div>
+        </div>
+    </div>
+</body>
+</html>

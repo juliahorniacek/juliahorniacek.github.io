@@ -1,0 +1,154 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.container {
+    height: 100%;
+}
+.container:before {
+    content: '';
+    height: 100%;
+    float: left;
+}
+
+#header {
+    margin-top: 16px;
+    width: 100%;
+    height: 150px;
+    white-space: nowrap;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 30pt;
+}
+
+#header hr {
+    width: 360px;
+}
+
+#header ul {
+    list-style-type: none;
+}
+
+#header ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 14pt;
+}
+
+#header #menu {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    position: absolute;
+    height: 800px;
+    width: 100%;
+}
+
+#wrapper > div {
+    height: 1200px;
+}
+
+.content
+{
+    position: relative;
+    z-index: 1;
+}
+    .content:after
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.leftSide {
+    overflow: auto;
+    width: 76%;
+    border: 1px solid #8C001A;
+    border-radius: 5px;
+}
+
+.rightSide {
+    float: right;
+    width: 23%;
+}
+
+#imgJuliaRightSide {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 1px solid #8C001A;
+}
+
+#rightSideContent {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.burgundyButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+	background-color:#d0451b;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #8c001a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+    width: 300px;
+}
+.burgundyButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+	background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+	background-color:#bc3315;
+}
+.burgundyButton:active {
+	position:relative;
+	top:1px;
+}
+
+#instagram {
+    margin-top: 80px;
+    width: 100%;
+}
+
+#instagram h1 {
+    font-size: 28pt;
+    margin-left: 56px;
+}
+
+#instafeed {
+    width: 1400px;
+}
+
+.linkSeparator {
+    font-size: 40pt;
+    position: relative;
+    bottom: 16px;
+    left: 12px;
+}

@@ -144,7 +144,7 @@ html {
 }
 
 #instafeed {
-    width: 1400px;
+    width: 80%;
 }
 
 .linkSeparator {
@@ -152,4 +152,16 @@ html {
     position: relative;
     bottom: 16px;
     left: 12px;
+}
+
+/*blogpost*/
+.blogpost p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-top: 30px;
+}
+.blogpost p img {
+    float: left;
+    margin-right: 20px;
 }

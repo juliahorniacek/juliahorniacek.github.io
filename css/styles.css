@@ -160,6 +160,9 @@ html {
 }
 
 /*blogpost*/
+.blogpost {
+    overflow: hidden;
+}
 .blogpost p {
     width: 90%;
     margin: 0 auto;

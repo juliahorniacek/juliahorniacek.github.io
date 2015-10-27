@@ -174,3 +174,7 @@ html {
     text-decoration: none;
     color: inherit;
 }
+
+#socialSection {
+    width: 100%;
+}

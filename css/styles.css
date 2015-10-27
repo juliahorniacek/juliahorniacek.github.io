@@ -39,6 +39,11 @@ html {
     font-size: 14pt;
 }
 
+#header ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
 #header #menu {
     width: 400px;
     margin: 0 auto;
@@ -164,4 +169,8 @@ html {
 .blogpost p img {
     float: left;
     margin-right: 20px;
+}
+.blogpost .introlink {
+    text-decoration: none;
+    color: inherit;
 }

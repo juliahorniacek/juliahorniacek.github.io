@@ -64,7 +64,7 @@ html {
     width: 100%;
 }
 
-#wrapper > .rightSide, #wrapper > .leftSide {
+#wrapper > .rightSide {
     height: 1200px;
 }
 
@@ -85,6 +85,8 @@ html {
     width: 76%;
     border: 1px solid #6F5CCD;
     border-radius: 5px;
+    display: inline-block;
+    position: relative;
 }
 
 .rightSide {
@@ -205,4 +207,10 @@ html {
 .introlink {
     font-family: 'Calligraffitti', cursive;
     font-size: 24px;
+}
+
+iframe {
+    overflow: hidden;
+    border: none;
+    height: 100%;
 }

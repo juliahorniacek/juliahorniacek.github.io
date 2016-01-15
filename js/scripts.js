@@ -5,15 +5,43 @@ window.posts = [
 
 
 $(document).ready(function() {
+    $("body").hide();
+    $("body").fadeIn(2000);
+    var queryString = window.location.search;
+    if (queryString.length > 0) {
+        var url = queryString.split("?")[1].split("&")[0].split("=")[1];
+        $("iframe").attr("src", "content/" + url);
+    }
     $('iframe').load(function() {
-        this.style.height =
-        this.contentWindow.document.body.offsetHeight + 20;
+        this.style.height = this.contentWindow.document.body.offsetHeight + 20;
         var t = this.style.height;
         $(".leftSide").height(t);
+
+        var v = location.href.split('/').slice(-1)[0].split("=")[1];
+        checkNext(v);
+        checkPrev(v);
     });
 });
 
 function nextPost(v) {
+    var x = checkNext(v);
+    if (x != -1) {
+        //Move the iframe to window.posts[nextPostIndex]
+        $("body").fadeOut("2000");
+        parent.location.href = "../blog.html?post=" + window.posts[x];
+    }
+}
+
+function previousPost(v) {
+    var x = checkPrev(v);
+    if (x != -1) {
+        //Move the iframe to window.posts[previousPostIndex]
+        $("body").fadeOut("2000");
+        parent.location.href = "../blog.html?post=" + window.posts[x];
+    }
+}
+
+function checkNext(v) {
     var nextPostIndex = -1;
     for (var i = 0; i < window.posts.length; ++i) {
         if (window.posts[i] == v) {
@@ -23,15 +51,14 @@ function nextPost(v) {
     }
     if (nextPostIndex >= window.posts.length) {
         //There is no next post, so disable the button
-        alert("there is no next post!!! haha");
+        document.getElementById("iframeblogpost").contentWindow.document.getElementById("nextpost").style.color = "#BBBBBB";
+        document.getElementById("iframeblogpost").contentWindow.document.getElementById("nextpost").style.cursor = "default";
+        return -1;
     }
-    else {
-        //Move the iframe to window.posts[nextPostIndex]
-        document.location.href = window.posts[nextPostIndex];
-    }
+    return nextPostIndex;
 }
 
-function previousPost(v) {
+function checkPrev(v) {
     var previousPostIndex = -1;
     for (var i = 0; i < window.posts.length; ++i) {
         if (window.posts[i] == v) {
@@ -41,11 +68,9 @@ function previousPost(v) {
     }
     if (previousPostIndex < 0) {
         //There is no previous post, so disable the button
-        alert("there is no previous post!!! haha");
+        document.getElementById("iframeblogpost").contentWindow.document.getElementById("prevpost").style.color = "#BBBBBB";
+        document.getElementById("iframeblogpost").contentWindow.document.getElementById("prevpost").style.cursor = "default";
+        return -1;
     }
-    else {
-        //Move the iframe to window.posts[previousPostIndex]
-        document.location.href = window.posts[previousPostIndex];
-    }
-
+    return previousPostIndex;
 }

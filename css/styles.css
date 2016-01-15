@@ -233,8 +233,18 @@ iframe {
     cursor: pointer;
 }
 
+.postfooter #nextpost:active {
+    position:relative;
+    top:1px;
+}
+
 .postfooter #prevpost {
     display: inline-block;
     text-align: left;
     cursor: pointer;
+}
+
+.postfooter #prevpost:active {
+    position:relative;
+    top:1px;
 }

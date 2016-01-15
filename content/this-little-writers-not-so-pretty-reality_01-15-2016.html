@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+<script src="../js/scripts.js"></script>
 <div class="blogpost">
-    <a href="javascript:parent.window.location.href='this_little_writers_not_so_pretty_reality_01-15-2016.html';" class="introlink"><h1>This Little Writer's Not-So-Pretty Reality</h1></a>
+    <a href="javascript:parent.window.location.href='this-little-writers-not-so-pretty-reality_01-15-2016.html';" id="introlink"><h1>This Little Writer's Not-So-Pretty Reality</h1></a>
     <h4>{January 15, 2016}</h4>
     <p>
         It took a lot of physical, and mental, ups and downs to get me where I am today. As much as I would love to attribute my slim body solely to eating
@@ -51,5 +52,6 @@
 </div>
 <div class="postfooter">
     <hr />
-    Next post &raquo;
+    <span id="prevpost" onclick="javascript:previousPost(location.href.split('/').slice(-1));">&laquo; Previous post</span>
+    <span id="nextpost" onclick="javascript:nextPost(location.href.split('/').slice(-1));">Next post &raquo;</span>
 </div>

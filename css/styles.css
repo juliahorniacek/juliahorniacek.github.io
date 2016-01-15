@@ -195,7 +195,7 @@ html {
     float: left;
     margin-right: 20px;
 }
-.blogpost .introlink {
+.blogpost #introlink {
     text-decoration: none;
     color: inherit;
 }
@@ -204,7 +204,7 @@ html {
     width: 310px;
 }
 
-.introlink {
+#introlink {
     font-family: 'Calligraffitti', cursive;
     font-size: 24px;
 }
@@ -216,12 +216,25 @@ iframe {
 }
 
 .postfooter {
+    margin: 0 auto;
     margin-top: 60px;
+    width: 90%;
 }
 
 .postfooter hr {
-    width: 90%;
     background-color: #6F5CCD;
     height: 1px;
     border: none;
+}
+
+.postfooter #nextpost {
+    display: inlinep-block;
+    float: right;
+    cursor: pointer;
+}
+
+.postfooter #prevpost {
+    display: inline-block;
+    text-align: left;
+    cursor: pointer;
 }

@@ -18,6 +18,9 @@ $(document).ready(function() {
         $(".leftSide").height(t);
 
         var v = location.href.split('/').slice(-1)[0].split("=")[1];
+        if (v == undefined) {
+            v = this.src.split("/").slice(-1)[0];
+        }
         checkNext(v);
         checkPrev(v);
     });

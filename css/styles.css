@@ -214,3 +214,14 @@ iframe {
     border: none;
     height: 100%;
 }
+
+.postfooter {
+    margin-top: 60px;
+}
+
+.postfooter hr {
+    width: 90%;
+    background-color: #6F5CCD;
+    height: 1px;
+    border: none;
+}

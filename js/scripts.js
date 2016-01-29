@@ -1,7 +1,8 @@
 window.posts = [
     "introductions_01-08-2016.html",
     "this-little-writers-not-so-pretty-reality_01-15-2016.html",
-    "wedding-bells-and-building-muscle_01-22-2016.html"
+    "wedding-bells-and-building-muscle_01-22-2016.html",
+    "announcement-and-analysis_01-29-2016.html"
 ];
 
 

@@ -4,7 +4,7 @@ window.posts = [
     "wedding-bells-and-building-muscle_01-22-2016.html",
     "announcement-and-analysis_01-29-2016.html",
     "change-your-mind-change-your-world_02-05-2016.html",
-    "colliding-worlds-and-post-requests_02-12-2016.html"
+    "love-thoughts-and-the-cosmo-cameo_02-12-2016.html"
 ];
 
 

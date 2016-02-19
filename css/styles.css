@@ -8,6 +8,11 @@ html {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+img {
+    padding: 0;
+    margin: 0;
+}
+
 .container {
     height: 100%;
     width: 78%;
@@ -193,7 +198,8 @@ html {
 }
 .blogpost p img {
     float: left;
-    margin-right: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
 }
 .blogpost #introlink {
     text-decoration: none;

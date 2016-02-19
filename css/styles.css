@@ -197,7 +197,6 @@ img {
     font-size: 16px;
 }
 .blogpost p img {
-    float: left;
     border-radius: 6px;
     margin-bottom: 20px;
 }

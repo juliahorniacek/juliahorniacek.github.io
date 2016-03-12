@@ -5,7 +5,8 @@ window.posts = [
     "announcement-and-analysis_01-29-2016.html",
     "change-your-mind-change-your-world_02-05-2016.html",
     "love-thoughts-and-the-cosmo-cameo_02-12-2016.html",
-    "recap-my-first-almost-flawless-nyfw_02-19-2016.html"
+    "recap-my-first-almost-flawless-nyfw_02-19-2016.html",
+    "all-about-my-glam-brows_03-12-2016.html"
 ];
 
 

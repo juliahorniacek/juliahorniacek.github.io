@@ -253,3 +253,7 @@ iframe {
     position:relative;
     top:1px;
 }
+
+.blogpost .itemList {
+    margin-left: 40px;   
+}

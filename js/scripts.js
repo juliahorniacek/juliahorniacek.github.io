@@ -8,7 +8,8 @@ window.posts = [
     "recap-my-first-almost-flawless-nyfw_02-19-2016.html",
     "all-about-my-glam-brows_03-12-2016.html",
     "my-top-5-must-have-beauty-buys-for-spring-2016_03-25-2016.html",
-    "introducing-fit-and-engaged_04-08-2016.html"
+    "introducing-fit-and-engaged_04-08-2016.html",
+    "serving-up-some-positivity-with-a-side-of-protein-waffles_04-22-2016.html"
 ];
 
 

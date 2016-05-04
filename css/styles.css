@@ -257,3 +257,8 @@ iframe {
 .blogpost .itemList {
     margin-left: 40px;   
 }
+
+.blogpost ul {
+    font-size: 10pt;
+    margin-left: 36px;
+}

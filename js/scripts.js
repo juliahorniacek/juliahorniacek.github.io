@@ -10,7 +10,8 @@ window.posts = [
     "my-top-5-must-have-beauty-buys-for-spring-2016_03-25-2016.html",
     "introducing-fit-and-engaged_04-08-2016.html",
     "serving-up-some-positivity-with-a-side-of-protein-waffles_04-22-2016.html",
-    "introducing-a-before-b-and-the-turkey-avocado-burger-lettuce-wrap_05-04-2016.html"
+    "introducing-a-before-b-and-the-turkey-avocado-burger-lettuce-wrap_05-04-2016.html",
+    "weighing-it-out-fitness-and-food_05-20-2016.html"
 ];
 
 

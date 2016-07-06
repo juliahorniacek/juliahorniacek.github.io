@@ -280,6 +280,7 @@ Individual post types (Fit and Engaged, Lifestyle, etc)
 }
 
 .postTypePost {
+    position: absolute;
     width: 90%;
     height: 80px;
     border: 1px solid black;

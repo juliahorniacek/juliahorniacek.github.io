@@ -15,6 +15,26 @@ window.posts = [
     "making-the-switch-from-iifym-to-intuitive-eating_07-01-2016.html"
 ];
 
+window.fitAndEngagedPosts = [
+    ["Weighing It Out: Fitness and Food", "weighing-it-out-fitness-and-food_05-20-2016.html","Follow along on Julia's journey towards eating more and feeling great"],
+    ["Introducing A before B and the Turkey Avocado Burger Lettuce Wrap", "introducing-a-before-b-and-the-turkey-avocado-burger-lettuce-wrap_05-04-2016.html","Learn how to get the abs you've always wanted and how to make a delicious turkey burger dinner"],
+    ["Introducing: Fit and Engaged!", "introducing-fit-and-engaged_04-08-2016.html","Follow along with Julia's preparation for her wedding over the course of the next year"],
+    ["Wedding Bells and Building Muscle", "wedding-bells-and-building-muscle_01-22-2016.html","All about Julia's upcoming wedding and preparation"]
+];
+
+window.lifestylePosts = [
+    ["Making the Switch: From IIFYM to Intuitive Eating", "making-the-switch-from-iifym-to-intuitive-eating_07-01-2016.html","See why Julia made the switch from counting macros to following her intuition when eating"],
+    ["Serving Up Some Positivity With A Side Of Protein Waffles", "serving-up-some-positivity-with-a-side-of-protein-waffles_04-22-2016.html","Check out the delicious (and healthy) protein waffles Julia made!"],
+    ["My Top 5 Must-Have Beauty Buys for Spring 2016", "my-top-5-must-have-beauty-buys-for-spring-2016_03-25-2016.html","The 5 beauty products you must have in Spring 2016"],
+    ["All About My Glam Brows", "all-about-my-glam-brows_03-12-2016.html","Tutorial on how Julia tends to her brows"],
+    ["Recap: My First Almost Flawless NYFW", "recap-my-first-almost-flawless-nyfw_02-19-2016.html","Follow Julia through her first experience at the New York Fashion Week"],
+    ["Love Thoughts and the Cosmo Cameo", "love-thoughts-and-the-cosmo-cameo_02-12-2016.html","Read about Julia and Mark's big Cosmo debut"],
+    ["Change Your Mind, Change Your World", "change-your-mind-change-your-world_02-05-2016.html","All about Julia's struggles with eating disorders and how she changed her mind to overcome them"],
+    ["Announcement and Analysis", "announcement-and-analysis_01-29-2016.html","Read about life after graduation for Julia"],
+    ["This Little Writer's Not So Pretty Reality", "this-little-writers-not-so-pretty-reality_01-15-2016.html","The reality of Julia's physical struggles and her ability to overcome them"],
+    ["Introductions", "introductions_01-08-2016.html","An introduction to Julia Horniacek and her blog"]
+];
+
 
 $(document).ready(function() {
     $("body").hide();

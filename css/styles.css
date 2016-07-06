@@ -262,3 +262,71 @@ iframe {
     font-size: 10pt;
     margin-left: 36px;
 }
+
+/*
+Individual post types (Fit and Engaged, Lifestyle, etc)
+*/
+
+.postTypeYear {
+    width: 96%;
+    border-radius: 3px;
+    height: 80px;
+    background-color: #6F5CCD;
+    color: white;
+    font-size: 50pt;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.postTypePost {
+    width: 90%;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.postTypePost:active {
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.postTypeDate {
+    width: 10%;
+    height: 100%;
+    border-right: 1px solid black;
+}
+
+.postTypeMonth {
+    font-size: 24pt;
+    text-align: center;
+    border-bottom: 1px solid black;
+    background-color: #6F5CCD;
+    color: white;
+}
+
+.postTypeDay {
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 6px;
+}
+
+.postTypeTitle {
+    margin-top: -74px;
+    margin-left: 140px;
+    font-size: 15pt;
+}
+
+.postTypeDescription {
+    margin-top: 18px;
+    margin-left: 140px;
+    font-size: 10pt;
+}
+

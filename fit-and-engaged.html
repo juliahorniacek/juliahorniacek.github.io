@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>The Pretty Little Writer</title>
+    <title>The Pretty Little Writer | Fit & Engaged</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <link rel="alternate" type="application/rss+xml" href="http://www.juliahorniacek.com/rss.xml" title="The Pretty Little Writer">
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -17,6 +17,48 @@
             resolution: 'low_resolution'
         });
         userFeed.run();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            var posts = {};
+            for (i = 0; i < window.fitAndEngagedPosts.length; ++i) {
+                //Split them up by year in an array
+                var splitDate = window.fitAndEngagedPosts[i][1].split("_")[1].split(".")[0].split("-");
+                var year = splitDate[2];
+                if (!posts.hasOwnProperty(year)) {
+                    posts[year] = new Array();
+                }
+                posts[year].push(window.fitAndEngagedPosts[i]);
+                
+            }
+            for (i = 0; i < Object.keys(posts).length; ++i) {
+                $("#divFitAndEngaged").append("<div class='postTypeYear'>" + Object.keys(posts)[i] + "</div>");
+                for (j = 0; j < posts[Object.keys(posts)[i]].length; ++j) {
+                    var date = posts[Object.keys(posts)[i]][j][1].split("_")[1].split(".")[0];
+                    var title = posts[Object.keys(posts)[i]][j][0];
+                    var description = posts[Object.keys(posts)[i]][j][2];
+                    var splitDate = date.split("-");
+                    var month = splitDate[0];
+                    var day = splitDate[1];
+                    var year = splitDate[2];
+                    month = (month == "01" ? "Jan" : month == "02" ? "Feb" : month == "03" ? "Mar" : month == "04" ? "Apr" : month == "05" ? "May" : 
+                            month == "06" ? "Jun" : month == "07" ? "Jul" : month == "08" ? "Aug" : month == "09" ? "Sep" : month == "10" ? "Oct" : 
+                            month == "11" ? "Nov" : month == "12" ? "Dec" : "");
+                    $("#divFitAndEngaged").append("" + 
+                    "<div class=\"postTypePost\" onclick=\"javascript: location.href='blog.html?post=" + posts[Object.keys(posts)[i]][j][1] + "';\">" + 
+                    "<div class='postTypeDate'>" +
+                    "<div class='postTypeMonth'>" + month + "</div>" +  
+                    "<div class='postTypeDay'>" + day + "</div>" + 
+                    "</div>" + 
+                    "<div class='postTypeTitle'>" + title + "</div>" + 
+                    "<div class='postTypeDescription'>" + description + "</div>" + 
+                    "</div>"
+                    );
+                }
+                
+            }
+        });
     </script>
 
 </head>
@@ -59,7 +101,7 @@
                     </div>
                 </div>
                 <div class="leftSide">
-                    <iframe src="content/making-the-switch-from-iifym-to-intuitive-eating_07-01-2016.html" id="iframeblogpost" scrolling="no" style="width: 99%; height: 99%"></iframe>
+                    <div id="divFitAndEngaged"></div>
                 </div>
                 <div id="instagram">
                     <h1>Instagram</h1>
